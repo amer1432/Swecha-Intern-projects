@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+<style>
+body{
+background-color:#fce2db;
+border:2px solid black;
+padding:70px;
+font-size:22px;
+margin-top:120px;
+margin-left:400px;
+margin-right:400px;
+}
+</style>
+<script>
+function func1(){
+var a=document.getElementById('field1').value;
+var b=document.getElementById('field2').value;
+var c=Number(a)+Number(b);
+document.getElementById('result').innerHTML=c;
+console.log(c);
+}
+function func2(){
+var a=document.getElementById('field1').value;
+var b=document.getElementById('field2').value;
+var c=Number(a)-Number(b);
+document.getElementById('result').innerHTML=c;
+console.log(c);
+}
+function func3(){
+var a=document.getElementById('field1').value;
+var b=document.getElementById('field2').value;
+var c=Number(a)*Number(b);
+document.getElementById('result').innerHTML=c;
+console.log(c);
+}
+function func4(){
+var a=document.getElementById('field1').value;
+var b=document.getElementById('field2').value;
+var c=Number(a)/Number(b);
+document.getElementById('result').innerHTML=c;
+console.log(c);
+}
+</script>
+</head>
+<body>
+<center>
+
+<h2>Calculator</h2>
+<label>field1</label>
+<input type="number" name="field1" id="field1"><br><br>
+<label>field2</label>
+<input type="number" name="field2" id="field2"><br><br>
+<button type="submit" onclick=func1();>add</button>
+<button type="submit" onclick=func2();>sub</button>
+<button type="submit" onclick=func3();>mul</button>
+<button type="submit" onclick=func4();>div</button>
+<p>result  <span id="result"></span></p>
+</center>
+</body>
+</html>
